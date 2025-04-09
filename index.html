@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Day 2</title>
+    <link rel= "stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- <h1>CALCULATOR!</h1> -->
+    <div class="calculator">
+        <div class="inputBar">
+            <input type="text" id="display" placeholder="0">
+        </div>
+        <div class="buttons">
+                <button class="operator" onclick="clearDisplay()">C</button>
+                <button class="operator" onclick="setOperator('/')">/</button>
+                <button class="operator" onclick="setOperator('*')">*</button>
+                <button onclick="calculateResult('=')">=</button>
+
+                <button onclick="insertValue('7')">7</button>
+                <button onclick="insertValue('8')">8</button>
+                <button onclick="insertValue('9')">9</button>
+                <button class="operator" onclick="setOperator('+')">+</button>
+
+                <button onclick="insertValue('4')">4</button>
+                <button onclick="insertValue('5')">5</button>
+                <button onclick="insertValue('6')">6</button>
+                <button class="operator" onclick="setOperator('-')">-</button>
+
+                <button onclick="insertValue('1')">1</button>
+                <button onclick="insertValue('2')">2</button>
+                <button onclick="insertValue('3')">3</button>
+                <button onclick="insertValue('.')">.</button>
+                <button onclick="insertValue('0')">0</button>
+        </div>
+        <script src="../day 2/main.js"></script>
+    </div>
+</body>
