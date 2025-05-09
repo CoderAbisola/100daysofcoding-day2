@@ -1,27 +1,56 @@
-.calculator{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
     border-radius: 10px;
     background-color: rgb(139, 139, 230);
     width: 50%;
-    height: 400px;
+    height: 90%;
     justify-self: center;
 }
 
-.inputBar{
+@media (min-width: 1024px) {
+    .calculator {
+        height: 100%;
+    }
+    .inputBar {
+        padding: 0;
+    }
+    .body {
+        height: 500vh;
+    }
+}
+
+.inputBar {
     padding: 20%;
     justify-self: center;
 }
 
-.buttons{
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     width: 70%; 
     justify-self: center;
-    gap: 10%;
+    gap: 10px; /* ✅ Fixed: was 10% causing overflow */
+}
+
+button:hover {
+    background-color: #ddd;
 }
 
 .operator.active {
-    background-color: #4CAF50; /* green, or any color you like */
+    background-color: #4CAF50;
     color: white;
-  }
-  
+}
